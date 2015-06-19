@@ -13,6 +13,8 @@
 		0A2F02851B309A86008F2039 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2F02841B309A86008F2039 /* Images.xcassets */; };
 		0A2F02881B309A86008F2039 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2F02861B309A86008F2039 /* LaunchScreen.xib */; };
 		0A2F02941B309A86008F2039 /* OneMoreRosterProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2F02931B309A86008F2039 /* OneMoreRosterProjectTests.swift */; };
+		0A7A13571B31149A007D8B9B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7A13561B31149A007D8B9B /* DetailViewController.swift */; };
+		0A7A135A1B31156C007D8B9B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7A13591B31156C007D8B9B /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		0A2F028D1B309A86008F2039 /* OneMoreRosterProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneMoreRosterProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A2F02921B309A86008F2039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2F02931B309A86008F2039 /* OneMoreRosterProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMoreRosterProjectTests.swift; sourceTree = "<group>"; };
+		0A7A13561B31149A007D8B9B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0A7A13591B31156C007D8B9B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				0A2F027D1B309A86008F2039 /* AppDelegate.swift */,
 				0A2F027F1B309A86008F2039 /* ViewController.swift */,
+				0A7A13561B31149A007D8B9B /* DetailViewController.swift */,
+				0A7A13591B31156C007D8B9B /* Person.swift */,
 				0A2F02811B309A86008F2039 /* Main.storyboard */,
 				0A2F02841B309A86008F2039 /* Images.xcassets */,
 				0A2F02861B309A86008F2039 /* LaunchScreen.xib */,
@@ -212,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7A13571B31149A007D8B9B /* DetailViewController.swift in Sources */,
 				0A2F02801B309A86008F2039 /* ViewController.swift in Sources */,
+				0A7A135A1B31156C007D8B9B /* Person.swift in Sources */,
 				0A2F027E1B309A86008F2039 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +413,7 @@
 				0A2F02991B309A86008F2039 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A2F029A1B309A86008F2039 /* Build configuration list for PBXNativeTarget "OneMoreRosterProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				0A2F029C1B309A86008F2039 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

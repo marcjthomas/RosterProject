@@ -7,10 +7,16 @@
 //
 import UIKit
 
+
 class DetailViewController: UIViewController, UITextFieldDelegate {
   
   @IBOutlet weak var firstNameTextField: UITextField!
   @IBOutlet weak var lastNameTextField: UITextField!
+  
+  @IBOutlet weak var DogFace: UIImageView!
+ 
+  
+
   
   var selectedPerson : Person!
   
@@ -21,10 +27,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     self.firstNameTextField.tag = 0
     self.lastNameTextField.tag = 1
     
-    //self.firstNameLabel.text = self.selectedPerson.firstName
+    
     self.firstNameTextField.text = self.selectedPerson.firstName
     self.lastNameTextField.text = self.selectedPerson.lastName
-    // Do any additional setup after loading the view.
+  
   }
   
   func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -37,9 +43,31 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     if textField.tag == 0 {
       //set the first name
       self.selectedPerson.firstName =  textField.text
-    } else {
+    }
+    else {
       //set the last name
       self.selectedPerson.lastName = textField.text
     }
+    
+    //below
+//    
+//    func didReceiveMemoryWarning() {
+//      super.didReceiveMemoryWarning()
+//      // Dispose of any resources that can be recreated.
+//    }
+//    
+//    func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+//      self.view.endEditing(true)
+//    }
+//    func textFieldShouldReturn(textField: UITextField) -> Bool {
+//      
+//      textField.resignFirstResponder()
+//      return true
+//    }
+    
+   //above
+    
+    
+    
   }
 }

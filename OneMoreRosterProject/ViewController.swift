@@ -12,10 +12,23 @@ class ViewController: UIViewController, UITableViewDataSource {
   
   @IBOutlet weak var tableView: UITableView!
   
-  var cellContent = ["Bob","Steve","Sue","Mike","Ralph","Buster","Jane","Gabi","Bella","Richard","Russel","George","Robin","Cal"]
+  var people = [Person]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    //var fighterOne = Shedinja (startingName: "Shedinja")
+      var personOne = Person(first: "Joe", last: "Blow")
+      var personTwo = Person(first: "Steve", last: "Smith")
+      var personThree = Person(first: "Bob", last: "Thomas")
+      var personFour = Person(first: "George", last: "Smitty")
+      var personFive = Person(first: "Kate", last: "Spacy")
+    
+    
+    self.people.append(personOne)
+    self.people.append(personTwo)
+    self.people.append(personThree)
+    self.people.append(personFour)
+    self.people.append(personFive)
     
     self.tableView.dataSource = self
     
@@ -23,25 +36,29 @@ class ViewController: UIViewController, UITableViewDataSource {
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-    return cellContent.count
+    return people.count
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     
-    //   var cell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
+    //var cell = self.tableView.dequeueReusableCellWithIdentifier("Cell") as! UITableViewCell
     let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
-    cell.textLabel?.text = self.cellContent[indexPath.row]
+    let person = self.people[indexPath.row]
+    cell.textLabel?.text = person.firstName + person.lastName
     return cell
     
   }
   
   
-//  override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) { if segue.identifier == "ShowPerson" {
-//  var DetailViewController = segue.destinationViewControler as
-//  DetailViewController
+   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    
+    if segue.identifier == "ShowPerson" {
+    
+    var detailViewController = segue.destinationViewController as! DetailViewController
+    let indexPath = self.tableView.indexPathForSelectedRow()
+    let person = self.people[indexPath!.row]
+        detailViewController.selectedPerson = person
+  
+    }
   }
-  
-
-  
-
-
+}

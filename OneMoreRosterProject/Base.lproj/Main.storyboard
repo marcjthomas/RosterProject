@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -26,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="HzA-b0-fbv" kind="show" id="B7H-Fd-w5C"/>
+                                            <segue destination="HzA-b0-fbv" kind="show" identifier="ShowPerson" id="B7H-Fd-w5C"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -54,27 +55,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="firstName" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LFr-sd-0PI">
-                                <rect key="frame" x="259" y="78" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="lastName" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5O-fQ-0u1">
+                                <rect key="frame" x="392" y="58" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Hip-dj-xri"/>
+                                    <constraint firstAttribute="width" constant="200" id="QXB-ps-Ocw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Hip-dj-xri"/>
+                                    </mask>
+                                </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="lastName" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5O-fQ-0u1">
-                                <rect key="frame" x="259" y="204" width="97" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DogFace.png" highlightedImage="DogFace.png" translatesAutoresizingMaskIntoConstraints="NO" id="rxC-qo-upC">
+                                <rect key="frame" x="16" y="20" width="150" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="Me1-ia-T4S"/>
+                                    <constraint firstAttribute="width" constant="150" id="p9f-sW-7TL"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="firstName" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LFr-sd-0PI">
+                                <rect key="frame" x="392" y="20" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="VFk-Ft-Iob"/>
+                                    <constraint firstAttribute="width" constant="300" id="bhZ-0c-Vek"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bhZ-0c-Vek"/>
+                                    </mask>
+                                </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1j-1y-llX">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.6549019814" blue="0.75294125079999996" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="IXk-wQ-vyH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="LFr-sd-0PI" secondAttribute="trailing" constant="-8" id="AkH-9d-aYw"/>
+                            <constraint firstAttribute="centerY" secondItem="J1j-1y-llX" secondAttribute="centerY" id="HcW-wH-4gz"/>
+                            <constraint firstItem="d5O-fQ-0u1" firstAttribute="top" secondItem="LFr-sd-0PI" secondAttribute="bottom" constant="8" id="MSB-Lc-ZPL"/>
+                            <constraint firstItem="LFr-sd-0PI" firstAttribute="top" secondItem="bXE-2e-wkD" secondAttribute="bottom" id="OQX-Po-Dan"/>
+                            <constraint firstItem="rxC-qo-upC" firstAttribute="leading" secondItem="Pd4-Xz-CzH" secondAttribute="leadingMargin" id="ZU5-gn-F5t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d5O-fQ-0u1" secondAttribute="trailing" constant="-8" id="aXD-RV-aL6"/>
+                            <constraint firstItem="rxC-qo-upC" firstAttribute="top" secondItem="bXE-2e-wkD" secondAttribute="bottom" id="chu-vh-Zcb"/>
+                            <constraint firstAttribute="centerX" secondItem="J1j-1y-llX" secondAttribute="centerX" id="qyx-KF-ces"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="DogFace" destination="rxC-qo-upC" id="JuT-bc-X6W"/>
                         <outlet property="firstNameTextField" destination="LFr-sd-0PI" id="pkr-W5-etr"/>
                         <outlet property="lastNameTextField" destination="d5O-fQ-0u1" id="zse-PT-DwP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p68-Fp-Iq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859" y="380"/>
+            <point key="canvasLocation" x="876" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="DogFace.png" width="692" height="491"/>
+    </resources>
 </document>

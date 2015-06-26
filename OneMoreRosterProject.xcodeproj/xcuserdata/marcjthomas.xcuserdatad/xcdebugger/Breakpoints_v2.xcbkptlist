@@ -6,15 +6,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OneMoreRosterProject/ViewController.swift"
-            timestampString = "456270244.311631"
+            timestampString = "456889952.985204"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -22,94 +22,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "OneMoreRosterProject/DetailViewController.swift"
-            timestampString = "456425050.390638"
+            filePath = "OneMoreRosterProject/ViewController.swift"
+            timestampString = "456889952.985204"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "DetailViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "OneMoreRosterProject.DetailViewController.firstNameTextField.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
-                  moduleName = "OneMoreRosterProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marcjthomas/Desktop/OneMoreRosterProject/OneMoreRosterProject/DetailViewController.swift"
-                  timestampString = "456425050.403217"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "OneMoreRosterProject.DetailViewController.firstNameTextField.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
-                  moduleName = "OneMoreRosterProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marcjthomas/Desktop/OneMoreRosterProject/OneMoreRosterProject/DetailViewController.swift"
-                  timestampString = "456425050.434646"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "OneMoreRosterProject.DetailViewController.firstNameTextField.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextField&gt;"
-                  moduleName = "OneMoreRosterProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marcjthomas/Desktop/OneMoreRosterProject/OneMoreRosterProject/DetailViewController.swift"
-                  timestampString = "456425050.43485"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "OneMoreRosterProject.DetailViewController.init (OneMoreRosterProject.DetailViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; OneMoreRosterProject.DetailViewController"
-                  moduleName = "OneMoreRosterProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marcjthomas/Desktop/OneMoreRosterProject/OneMoreRosterProject/DetailViewController.swift"
-                  timestampString = "456425050.435008"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "53">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "OneMoreRosterProject.DetailViewController.init (OneMoreRosterProject.DetailViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; OneMoreRosterProject.DetailViewController"
-                  moduleName = "OneMoreRosterProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/marcjthomas/Desktop/OneMoreRosterProject/OneMoreRosterProject/DetailViewController.swift"
-                  timestampString = "456425050.435223"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
